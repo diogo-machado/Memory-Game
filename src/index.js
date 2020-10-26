@@ -124,7 +124,7 @@ const MemoryGame = () => {
         <Container maxWidth="lg">
             <Grid container direction="column" justify="flex-start" alignItems="center">
                 <Grid item container className="gameStats" alignItems="stretch" style={{ height: screenHeight / 6 }}>
-                    <Grid item xs={6}><span className="title">my memory game</span></Grid>
+                    <Grid item xs={6}><span className="title">Memory Game</span></Grid>
                     <Grid item xs={3}>{timer}<span className="stat"> Seconds</span></Grid>
                     <Grid item xs={3}>{moves}<span className="stat"> Moves</span></Grid>
                 </Grid>
