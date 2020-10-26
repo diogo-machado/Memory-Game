@@ -1,0 +1,114 @@
+:root {
+    --priColor: #26C6DA;
+    --secColor: #ffffff;
+  }
+  
+  html, body {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 67%, var(--priColor) 100%);
+    /* background-color: var(--secColor); */
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    font-family: 'Baloo 2';
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background: rgba(40,185,216, 1); */
+  }
+  
+  .gameStats {
+    text-align: center;
+    color: var(--priColor) !important;
+    text-transform: lowercase;
+    font-size: 4vw;
+    cursor: default; 
+    height: 15vh;
+    line-height: 15vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 25%;
+  }
+  
+  .title {
+    font-size: 4vw;
+    color: var(--priColor) !important;
+  }
+  
+  .stat {
+    font-size: 2vw;
+    vertical-align: middle;
+  }
+  
+  @media only screen and (min-width: 1300px) {
+    .gameStats {
+      font-size: 48pt;
+      height: 130px;
+      line-height: 130px;
+    }
+    .title {
+      font-size: 48pt;
+    }
+    .stat {
+      font-size: 24pt;
+    }
+  }
+  
+  .memoryCard {
+    width: 100%;
+    padding-top: 100%;
+    /* padding-top: 23vh; */
+    position: relative;
+  }
+  
+  @media screen and (min-aspect-ratio: 1/1) {
+    .memoryCard {
+      width: 100%;
+      padding-top: 20vh;
+      position: relative;
+    }  
+  }
+  
+  .memoryImg {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  
+  .gameOver {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0.7);
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .message {
+    text-align: center;
+  }
+  
+  .win {
+    font-size: 5vw;
+    color: var(--priColor) !important;
+    margin: 0;
+  }
+  
+  .restartBtn {
+    background-color: var(--priColor) !important;
+    color: white !important;
+    padding: 2px;
+    cursor: pointer;
+  }
